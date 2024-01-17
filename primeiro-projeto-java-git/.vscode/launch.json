@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "PlanoOperadora",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.PlanoOperadora",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
+            "name": "ResultadoEscolar",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.ResultadoEscolar",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
+            "name": "CaixaEletronico",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.CaixaEletronico",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
             "name": "ContaTerminal",
             "request": "launch",
             "mainClass": "exercicios.aula.ContaBanco.ContaTerminal",
