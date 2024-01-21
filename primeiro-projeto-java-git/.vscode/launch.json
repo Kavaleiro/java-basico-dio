@@ -6,6 +6,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "TesteTres",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.TesteRepeticao.TesteTres",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
+            "name": "TesteDois",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.TesteRepeticao.TesteDois",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
+            "name": "TesteUm",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.TesteRepeticao.TesteUm",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
             "name": "ExempleWhile",
             "request": "launch",
             "mainClass": "ControledeFluxo.ExempleWhile",
