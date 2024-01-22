@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ExemploDoWhile",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.ExemploDoWhile",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
             "name": "TesteTres",
             "request": "launch",
             "mainClass": "ControledeFluxo.TesteRepeticao.TesteTres",
