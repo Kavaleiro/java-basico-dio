@@ -6,6 +6,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "FormatadorCep",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.TratamentoExceção.FormatadorCep",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
+            "name": "aboutMe",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.TratamentoExceção.aboutMe",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
             "name": "ExemploDoWhile",
             "request": "launch",
             "mainClass": "ControledeFluxo.ExemploDoWhile",
