@@ -3,11 +3,11 @@ package DesafioPessoal;
 import java.util.Locale;
 import java.util.Scanner;
 
-public class CalculadoraCientifica {
+public class DP {
     public static void main(String[] args) {
- 
 
-            Scanner sc = new Scanner(System.in).useLocale(Locale.US);
+            try(      
+            Scanner sc = new Scanner(System.in).useLocale(Locale.US)){
             System.out.println("Digite um Numero: ");
             int numeroUm = sc.nextInt();
             System.out.println("Digite outro Numero: ");
@@ -42,10 +42,11 @@ public class CalculadoraCientifica {
                 System.out.println(numeroUm+ " : "+numeroDois +" = "+ PROD);
             }
             
-//            System.out.println("Voce deseja continuar: ");
- //           System.out.println("[1]----SIM");
- //           System.out.println("[2]----NÃO");
- //           cont = sc.nextInt();
-            }
-        } 
- 
+            System.out.println("Voce deseja continuar: ");
+            System.out.println("[1]----SIM");
+            System.out.println("[2]----NÃO");
+            boolean cont = sc.nextInt(3)==3;
+        }
+    }
+} 
+
