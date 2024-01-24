@@ -1,17 +1,21 @@
 package DesafioPessoal;
 
-import java.util.Locale;
 import java.util.Scanner;
 
 public class CalculadoraCientifica {
     public static void main(String[] args) {
- 
+        
+        short escolha;
+        double numeroUm, numeroDois;
+        Scanner sc = new Scanner(System.in);
 
-            Scanner sc = new Scanner(System.in).useLocale(Locale.US);
-            System.out.println("Digite um Numero: ");
-            int numeroUm = sc.nextInt();
-            System.out.println("Digite outro Numero: ");
-            int numeroDois = sc.nextInt();
+        do {
+            System.out.println("-----------------------------");
+            System.out.print("Digite um Numero: ");
+            numeroUm = sc.nextDouble();
+            System.out.print("Digite outro Numero: ");
+            numeroDois = sc.nextDouble();
+
 
             System.out.println("O que voce deseja fazer: ");
             System.out.println("Escolha uma alternativa: ");
@@ -19,33 +23,40 @@ public class CalculadoraCientifica {
             System.out.println("[2]----SUBTRAIR");
             System.out.println("[3]----MULTIPLICAR");
             System.out.println("[4]----DIVIDIR");
-            int escolha = sc.nextInt();
+            escolha = sc.nextShort();
 
+            double PROD = 0;
             if (escolha == 1){
-                int PROD = numeroUm + numeroDois;
+                PROD = numeroUm + numeroDois;
                 System.out.println("Voce escolheu SOMAR, o seu resultado é...");
                 System.out.println(numeroUm+ " + "+numeroDois +" = "+ PROD);
             }
             if ( escolha == 2){
-                int PROD = numeroUm - numeroDois;
+                PROD = numeroUm - numeroDois;
                 System.out.println("Voce escolheu SUBTRAIR. o seu resultado é...");
                 System.out.println(numeroUm+ " - "+numeroDois +" = "+ PROD);
             }
             if (escolha == 3) {
-                int PROD = numeroUm *numeroDois;
+                PROD = numeroUm *numeroDois;
                 System.out.println("Voce escolheu MULTIPLICAR,  o seu resultado é ...");
                 System.out.println(numeroUm+ " X "+numeroDois +" = "+ PROD);
             }
             if (escolha == 4) {
-                int PROD = numeroUm / numeroDois;
+                PROD = numeroUm / numeroDois;
                 System.out.println("Voce escolheu DIVIDIR, o seu resultado é...");
                 System.out.println(numeroUm+ " : "+numeroDois +" = "+ PROD);
             }
-            
-//            System.out.println("Voce deseja continuar: ");
- //           System.out.println("[1]----SIM");
- //           System.out.println("[2]----NÃO");
- //           cont = sc.nextInt();
+            System.out.println("-----------------------------");
+            System.out.println("Você deseja continuar: ");
+            System.out.println("[1]----SIM ");
+            System.out.println("[0]----NÃO ");
+            escolha = sc.nextShort();
+            if(escolha == 0){
+                System.out.println("-----------------------------");
+                System.out.println("MUITO OBRIGADO POR PARTICIPAR!!");
+                break;
             }
-        } 
+        } while(escolha != 0);
+    }
+} 
  
