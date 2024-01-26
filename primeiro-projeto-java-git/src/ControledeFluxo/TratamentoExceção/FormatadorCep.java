@@ -2,20 +2,18 @@ package ControledeFluxo.TratamentoExceção;
 
 public class FormatadorCep {
     public static void main(String[] args) {
-        try { 
-            String cepFormatado = formatarCep("3765064");
+        try {
+            String cepFormatado = formatarCep("23.765-964"); 
             System.out.println(cepFormatado);
-        } catch (CepInvalidoException e) {
-            //TODO Auto-generated catch block
-            System.out.println("O cep precisa conter 8 némeros!");
+        } catch(CepInvalidoException e ){
+            //e.printStackTrace();
+
         }
-    }  
+    }
     static String formatarCep(String cep) throws CepInvalidoException{
-        if(cep.length() != 8 )//difeten te 8
+        if (cep.length() !=8)
             throw new CepInvalidoException();
 
-            //simulando um cep formatado
-            return "23.765-064";
-
+        return "23.765-964";
     }
-}
+} 

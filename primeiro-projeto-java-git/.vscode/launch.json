@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CalculoException",
+            "request": "launch",
+            "mainClass": "DesafioPessoal.CalculoException",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
             "name": "DP",
             "request": "launch",
             "mainClass": "DesafioPessoal.DP",
