@@ -1,9 +1,8 @@
 package DesafioPessoal;
 
 import java.util.Scanner;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Arrays;
+import java.util.List;
 
 public class CalculoAposta {
 
@@ -26,19 +25,16 @@ public class CalculoAposta {
                     break;
                 }
                 System.out.println("Qual foi sua perda: ");
-                while (sc.hasNextDouble()) {
-                    perda.add(sc.nextDouble());
-                    break;
-                }
+                perda.add(sc.nextDouble());
+
                 System.out.println("[1]-----CONTINUAR");
                 System.out.println("[0]-----SAIR");
                 sair = sc.nextInt();
                 if(sair == 0){
                     System.out.println("Muito obrigado por participar!!");
                     System.out.print("\n-----SEUS GANHOS-----");
-                    for( double g : ganho) {
-                        System.out.println(Arrays.asList(ganho));
-                        i++;
+                    for( i = 1; i < ganho.size(); i++) {
+                        System.out.println("["+i+"]-----"+ganho);
                     }
 
                     System.out.print("\n-----SUAS PERDAS-----");
