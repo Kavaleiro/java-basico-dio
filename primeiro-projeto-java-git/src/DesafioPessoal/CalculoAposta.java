@@ -8,8 +8,7 @@ public class CalculoAposta {
     public static void main(String[] args) {
         
         int sair;
-        double totganho = 0;
-        double totperda = 0;
+        double totganho = 0; double totperda = 0; double maiorganho = 0; double maiorperda = 0;
 
         ArrayList <Double> ganho = new ArrayList<>();
         ArrayList <Double> perda = new ArrayList<>();
@@ -35,6 +34,10 @@ public class CalculoAposta {
             for( int i = 0; i < ganho.size(); i++) {
                 System.out.println("["+(i+1)+"]-----  "+ganho.get(i));
                 totganho +=  ganho.get(i);
+                maiorganho = ganho.get(i);
+                if(ganho.get(i) > maiorganho){
+                    maiorganho = ganho.get(i);
+                }
 
             }
 
@@ -42,10 +45,16 @@ public class CalculoAposta {
             for(int x = 0; x < perda.size(); x++){
                 System.out.println("["+(x+1)+"]-----  "+perda.get(x));
                 totperda += perda.get(x);
+                maiorperda = perda.get(x);
+                if(perda.get(x) > maiorperda){
+                    maiorperda = perda.get(x);
+                }
             }
             Double saldo = totganho - totperda;  
             System.err.println("=====================================");
-            System.err.println("SEU SALDO----------"+ saldo);     
+            System.err.println("SEU SALDO--------------------"+ saldo);     
+            System.err.println("MAIOR VALOR GANHO------------"+ maiorganho);     
+            System.err.println("MAIOR VALOR PERDIDO----------"+ maiorperda);     
             System.err.println("=====================================");     
 
         }catch(Exception e){
