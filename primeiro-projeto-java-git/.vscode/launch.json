@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "MediaPessoas",
+            "request": "launch",
+            "mainClass": "DesafioPessoal.MediaPessoas",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
             "name": "CalculoAposta",
             "request": "launch",
             "mainClass": "DesafioPessoal.CalculoAposta",

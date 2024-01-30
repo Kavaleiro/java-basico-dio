@@ -6,6 +6,7 @@ import java.util.ArrayList;
 public class CalculoAposta {
 
     public static void main(String[] args) {
+
         
         int sair;
         double totganho = 0; double totperda = 0; double maiorganho = 0; double maiorperda = 0;
@@ -19,11 +20,12 @@ public class CalculoAposta {
                 System.out.println("Qual foi o seu ganho:");
                 while( sc.hasNextDouble()){
                     ganho.add(sc.nextDouble());
+                    System.out.println("Qual foi sua perda: ");
+                    perda.add(sc.nextDouble());
+                    sc.close();
+    
                     break;
                 }
-                System.out.println("Qual foi sua perda: ");
-                perda.add(sc.nextDouble());
-
                 System.out.println("[1]-----CONTINUAR");
                 System.out.println("[0]-----SAIR");
                 sair = sc.nextInt();
@@ -34,7 +36,6 @@ public class CalculoAposta {
             for( int i = 0; i < ganho.size(); i++) {
                 System.out.println("["+(i+1)+"]-----  "+ganho.get(i));
                 totganho +=  ganho.get(i);
-                maiorganho = ganho.get(i);
                 if(ganho.get(i) > maiorganho){
                     maiorganho = ganho.get(i);
                 }
@@ -45,7 +46,6 @@ public class CalculoAposta {
             for(int x = 0; x < perda.size(); x++){
                 System.out.println("["+(x+1)+"]-----  "+perda.get(x));
                 totperda += perda.get(x);
-                maiorperda = perda.get(x);
                 if(perda.get(x) > maiorperda){
                     maiorperda = perda.get(x);
                 }
@@ -59,7 +59,7 @@ public class CalculoAposta {
 
         }catch(Exception e){
             System.out.println("Voce digitou um valor inválido!!");
-            return;
+
         }
     }
 }
