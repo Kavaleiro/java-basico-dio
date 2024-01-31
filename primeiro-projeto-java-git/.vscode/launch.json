@@ -6,6 +6,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "ProcessoSeletivo",
+            "request": "launch",
+            "mainClass": "ControledeFluxo.Candidatura.ProcessoSeletivo",
+            "projectName": "primeiro-projeto-java-git_d190a3af"
+        },
+        {
+            "type": "java",
             "name": "MediaPessoas",
             "request": "launch",
             "mainClass": "DesafioPessoal.MediaPessoas",
