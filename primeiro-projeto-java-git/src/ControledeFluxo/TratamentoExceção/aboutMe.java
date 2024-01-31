@@ -1,6 +1,5 @@
 package ControledeFluxo.TratamentoExceção;
 
-import java.util.InputMismatchException;
 import java.util.Locale;
 import java.util.Scanner;
 
@@ -28,7 +27,7 @@ public class aboutMe {
         System.out.println("Minha altura e "+altura);
         sc.close();
         }
-        catch (InputMismatchException e){
+        catch (Exception e){
             System.err.println("Os campos idade e altura estao errados! ");
         }
     }
