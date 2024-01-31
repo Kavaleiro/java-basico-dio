@@ -2,7 +2,6 @@ package DesafioPessoal;
 
 import java.util.Scanner;
 
-import javax.management.RuntimeErrorException;
 
 import java.util.ArrayList;
 
@@ -36,8 +35,8 @@ public class MediaPessoas {
                 menoraltura = altura;
             }
         } 
-
-        }catch(RuntimeException e){
+        sc.close();
+        }catch(Aplication e){
             System.out.println(e.getMessage());
         }
 
@@ -52,5 +51,6 @@ public class MediaPessoas {
             System.out.print(nome.get(i)+ " , ");
         }
 
-    }    
+    } 
+    
 }
