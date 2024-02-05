@@ -17,6 +17,7 @@ public class MediaPessoas {
         Scanner input = new Scanner(System.in);
 
         for(int x = 0; x < 3; x++ ) {
+            System.out.println("Qual o seu vendo se dara certo: ");
             System.out.println("Qual o seu genero: ");
             System.out.println("[1]-----MULHER");
             System.out.println("[2]-----HOMEM");
