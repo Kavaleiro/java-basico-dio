@@ -1,8 +1,8 @@
 package POO.equipamentos.impressora;
 
-public class Laser implements impressora {
+public class Laser implements Impressora {
     public void imprimir(){
-        System.out.println();
+        System.out.println("Imprimindo pelo Laser...");
     }
     
 }
