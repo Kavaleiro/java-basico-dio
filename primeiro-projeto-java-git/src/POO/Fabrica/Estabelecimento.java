@@ -8,5 +8,5 @@ public class Estabelecimento {
         Impressora imp = new Desk();
 
         imp.imprimir();
-    }k
+    }
 }
