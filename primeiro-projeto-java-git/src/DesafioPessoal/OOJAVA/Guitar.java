@@ -5,11 +5,17 @@ public class Guitar {
     //Defininir os "Membros"- propriedades e metodos(Comportamentos)
     
     //propriedade
-    public String name;
-    public int chords;
+    private String firstName;
+    public String lastName;
+    public String fullName;
 
-    //comportamento
-    public void play(){
-        //Aqui vai ser tocado o audio
+    //SETTER
+    public void setFirstname(String firstName){
+        this.firstName= firstName.toUpperCase();
+    }
+
+    //GETTER
+    public String getFirstName(){
+        return firstName;
     }
 }
