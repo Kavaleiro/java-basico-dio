@@ -3,6 +3,7 @@ package DesafioPessoal.Desafio01.negocio;
 import java.util.Optional;
 
 import DesafioPessoal.Desafio01.BaseDados.Banco;
+import DesafioPessoal.Desafio01.entidades.Cliente;
 
 /**
  * Classe para manipular a entidade {@link Cliente}.
