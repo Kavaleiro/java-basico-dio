@@ -30,7 +30,7 @@ public class ClienteNegocio {
      * @return O cliente de possuir o CPF passado.
      */
 
-    public Optional<CLiente> consultar(String cpf) {
+    public Optional<Cliente> consultar(String cpf) {
 
         if(bancoDados.getCliente().getCpf().equals(cpf)) {
             return Optional.of(bancoDados.getCliente());

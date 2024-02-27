@@ -39,9 +39,7 @@ public class Livro extends Produto {
      */
 
     @Override
-    public double calcularFrete() {
-        return (getPreco() * getQuantidade()) * (1 + genero.getFator());
-    } 
+    public double calcularFrete() { return (getPreco() * getQuantidade()) * (1 + genero.getFator()); } 
     
     @Override
     public String toString() {

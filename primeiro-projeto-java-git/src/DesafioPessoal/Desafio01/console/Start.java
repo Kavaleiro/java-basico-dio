@@ -29,6 +29,7 @@ public class Start {
      * Método utilitário para inicializar a aplicação.
      * @param args Parâmentros dque podem ser passados de auxiliar na execução.
      */
+    
     public static void main(String[] args) {
         System.out.println("Bem vindo ao e-Compras");
 
@@ -93,7 +94,7 @@ public class Start {
                     pedidoNegocio.excluir(codigoPedido);
                     break;
                 case "7":
-                    produtoNegocio.listarTodos();
+                    produtoNegocio.listaTodos();
                     break;
                 case "8":
                     //TODO Listar todos os Pedidos

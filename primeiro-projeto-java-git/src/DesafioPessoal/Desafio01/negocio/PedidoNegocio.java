@@ -49,14 +49,20 @@ public class PedidoNegocio {
     public void salvar(Pedido novoPedido, Cupom cupom) {
 
         //Definir padrão código
-        //Pegar data do dia corrente
-        //Formatar código
+        String codigo = "PE%4d%2d%04d";
+        LocalDate hoje = LocalDate.now();
+        codigo = String.format(codigo, hoje.getYear(), hoje.getMonthValue(), bancoDados.getPedidos().length);
 
         //Setar código no pedido
+        novoPedido.setCodigo(codigo);
         //Setar cliente no pedido
+        novoPedido.setCliente(bancoDados.getCliente());
         //Calcular a set total
+        novoPedido.setTotal(calcularTotal(novoPedido.getProdutos(), cupom));
         //Adicionar no banco
+        bancoDados.adicionarPedido(novoPedido);
         //Mensagem
+        System.out.println("Pedido salvo com sucesso.");
     }
 
     /**
