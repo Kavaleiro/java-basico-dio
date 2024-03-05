@@ -1,4 +1,4 @@
-package POO.Mentoria;
+package POO.Mentoria.Models;
 
 public class Endereco {
 
@@ -21,7 +21,7 @@ public class Endereco {
     }
     public void setRua(String rua) {
         this.rua = rua;
-        /**Neste exemplo ele esta recebencod o atributo rua e fazendo alterações */
+        /**Neste exemplo ele esta recebendo o atributo rua e fazendo alterações */
     }
 
     //Complemento
@@ -38,5 +38,14 @@ public class Endereco {
     }
     public void setBairro(String bairro){
         this.bairro = bairro;
+    }
+
+    @Override
+    public String toString(){
+        return "Endereco{" +
+        "rua = "+ rua + '\'' +
+        ", complemento = "+ complemento +'\'' + 
+        ", bairro = "+bairro+ '\\'+
+        '}';
     }
 }
