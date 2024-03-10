@@ -1,4 +1,4 @@
-package POO.Mentoria.Models;
+package POO.Mentoria;
 
 public class Vendedor extends FuncionarioCLT implements CalculaBonificacao {
 

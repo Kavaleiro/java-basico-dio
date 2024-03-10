@@ -1,4 +1,4 @@
-package POO.Mentoria.Models;
+package POO.Mentoria;
 
 public class OperadorCaixa extends FuncionarioCLT{
 

@@ -1,4 +1,4 @@
-package POO.Mentoria.Models;
+package POO.Mentoria;
 
 /* essa Classe é "abstract pq ela sera ultilizada como herança.
 Ou seja, ela nao pode receber um "NEW" */

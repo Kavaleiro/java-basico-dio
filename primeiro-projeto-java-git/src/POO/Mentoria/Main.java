@@ -1,10 +1,5 @@
 package POO.Mentoria;
 
-import POO.Mentoria.Models.Endereco;
-import POO.Mentoria.Models.Gerente;
-import POO.Mentoria.Models.OperadorCaixa;
-import POO.Mentoria.Models.Vendedor;
-
 public class Main {
 
     public static void main(String[] args) { 

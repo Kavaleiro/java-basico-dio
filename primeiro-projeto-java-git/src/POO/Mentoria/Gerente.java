@@ -1,4 +1,4 @@
-package POO.Mentoria.Models;
+package POO.Mentoria;
 
 public class Gerente extends FuncionarioPJ implements CalculaBonificacao{
     /** Olhar a aula na hora 1:25 */
