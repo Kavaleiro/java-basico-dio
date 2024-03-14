@@ -1,5 +1,4 @@
 package POO.MentoriaDesafioPoo;
 
-public class cliente {
-    
+public class Cliente {
 }

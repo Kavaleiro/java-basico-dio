@@ -2,7 +2,11 @@ package POO.MentoriaDesafioPoo;
 
 public interface interfaceConta {
 
-    void sacar(double valor);
-    void depositar(double valor);
-    void tranferir(double valor, Conta contaDestino);
+    public void sacar(double valor);      
+    
+    public void trasfeir(double valor, conta contaDestino);
+    
+    public void depositar(double valor);
+   
+    public void imprimirExtrato();
 }
